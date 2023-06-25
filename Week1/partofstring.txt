@@ -1,0 +1,6 @@
+string = input("Enter a string: ")
+start_char = int(input("Enter the start character index: "))
+end_char = int(input("Enter the end character index: "))
+
+desired_part = string[start_char:end_char]
+print("The desired part of the string is:", desired_part)

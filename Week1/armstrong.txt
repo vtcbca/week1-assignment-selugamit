@@ -1,0 +1,19 @@
+num = input("Enter a number: ")
+
+if num.isdigit():
+    num = int(num)
+
+    num_digits = len(str(num))
+    digit_sum = 0
+    temp = num
+
+    while temp > 0:
+        digit = temp % 10
+        digit_sum += digit ** num_digits
+        temp //= 10
+    if num == digit_sum:
+        print(num, "is an Armstrong number.")
+    else:
+        print(num, "is not an Armstrong number.")
+else:
+    print("Invalid input. Please enter an integer number.")
